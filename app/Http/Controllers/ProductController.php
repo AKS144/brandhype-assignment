@@ -116,7 +116,7 @@ class ProductController extends Controller
        $product->update($prod);
 
 
-        return redirect('/product')->with(['message' => 'Post updated successfully!', 'status' => 'success']);
+        return redirect('/product')->with(['message' => 'Product updated successfully!', 'status' => 'success']);
     }
 
 
