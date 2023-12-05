@@ -24,30 +24,6 @@ class ProductController extends Controller
     }
 
 
-   /* public function store(Request $request)
-    {
-        $request->validate([
-            'category_id' => 'required',
-            'name' => 'required|min:50',
-            'stock_count' => 'required|min:1|max:50',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ]);
-
-
-        $product =  new Product();
-        $product->name = $request->name;
-        $product->stock_count = $request->stock_count;
-        $product->category_id = $request->category_id;
-        $product->image = $request->image;
-        $product->save();
-        dd($product);
-
-        return redirect()->route('product.index')->with('status', 'Product Updated Successfully');
-
-    }*/
-
-
-
     public function store(Request $request) {
 
         $request->validate([
